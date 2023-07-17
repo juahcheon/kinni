@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KINNI</title>
+
+    <!-- 폰트(NOTO SANS) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;600;900&display=swap" rel="stylesheet">
+    <!-- font-family: 'Noto Sans KR', sans-serif; -->
+
+    <!-- 폰트어썸 -->
+    <script src="https://kit.fontawesome.com/08d3ec3c73.js" crossorigin="anonymous"></script>
+
+    <!-- 제이쿼리 CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <!-- CSS 연결 -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="logInWrap">
+        <h1 class="joinH1">회원가입</h1>
+        <div class="signUpEmail">
+            <div class="signUpInput">
+                <div class="signInput">
+                    <label for="signId">Email</label>
+                    <input type="text" id="signId">
+                </div>
+                <div class="signInput">
+                    <label for="signPw">비밀번호</label>
+                    <input type="text" id="signPw">
+                </div>
+                <div class="signInput">
+                    <label for="signRePw">비밀번호 확인</label>
+                    <input type="text" id="signRePw">
+                </div>
+                <div class="signInput">
+                    <label for="name">닉네임</label>
+                    <input type="text" id="name">
+                </div>
+                <div class="joinBtns">
+                    <button type="button" class="joinExit">취소</button>
+                    <button type="button" class="join">회원가입</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 회원가입 모달 -->
+        <div class="bg">
+            <div class="joinModal">
+                <p>가입을 환영합니다.</p>
+                <button type="button" class="joinModalBtn">키니하러가기</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 자바스크립트 연결 -->
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KINNI</title>
+
+    <!-- 폰트(NOTO SANS) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;600;900&display=swap" rel="stylesheet">
+    <!-- font-family: 'Noto Sans KR', sans-serif; -->
+
+    <!-- 폰트어썸 -->
+    <script src="https://kit.fontawesome.com/08d3ec3c73.js" crossorigin="anonymous"></script>
+
+    <!-- 제이쿼리 CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <!-- CSS 연결 -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="noticeWrap">
+        <div class="fixed_wrap">
+            <!-- 헤더 -->
+            <header>
+                <a href="#" class="profileBtn">
+
+                </a>
+                <h1>logo</h1>
+                <a href="#" class="loginBtn">LOGIN</a>
+            </header>
+        </div>
+
+        <section class="noticeSection">
+            <button type="button" class="removeAll">지우기</button>
+            <ul>
+                <li>
+                    <i class="fa-solid fa-heart"></i>
+                    <div class="noticeContents">
+                        <img class="contentsProfile" src="" alt="프로필사진">
+                        <span class="noticeUsrName">비시렁</span>
+                        <span>님이 내 키니를 마음에 들어합니다.</span>
+                    </div>
+                    <button type="button" class="noticeExit">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </li>
+                <li>
+                    <i class="fa-solid fa-comments"></i>
+                    <div class="noticeContents">
+                        <img class="contentsProfile" src="" alt="프로필사진">
+                        <span class="noticeUsrName">어쩌라궁</span>
+                        <span>님이 내 키니에 답글을 달았습니다.</span>
+                    </div>
+                    <button type="button" class="noticeExit">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </li>
+                <li>
+                    <i class="fa-solid fa-comments"></i>
+                    <div class="noticeContents">
+                        <img class="contentsProfile" src="" alt="프로필사진">
+                        <span class="noticeUsrName">어쩌라궁</span>
+                        <span>님이 내 키니에 답글을 달았습니다.</span>
+                    </div>
+                    <button type="button" class="noticeExit">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </li>
+                <li>
+                    <i class="fa-solid fa-user-plus"></i>
+                    <div class="noticeContents">
+                        <img class="contentsProfile" src="" alt="프로필사진">
+                        <span class="noticeUsrName">비시렁</span>
+                        <span>님이 나를 팔로우 했습니다.</span>
+                    </div>
+                    <button type="button" class="noticeExit">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </li>
+            </ul>
+        </section>
+
+        <!-- 하단 메뉴탭 -->
+        <nav>
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-house"></i></a></li>
+                <li>
+                    <button type="button" class="searchBtn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </li>
+                <li><a href="#"><i class="fa-solid fa-bell"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
+            </ul>
+        </nav>
+
+        <!-- 검색 창 -->
+        <div class="bg">
+            <div class="search">
+                <div class="searchContents">
+                    <div class="searchTop">
+                        <a href="#" class="contentsProfile">
+
+                        </a>
+                        <input type="text" class="searchBar" placeholder="검색">
+                    </div>
+                    <div class="searchKey">
+                        <p class="latestSearch">최근 검색어</p>
+                        <button type="button" class="searchExit">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                    <ul class="searchUser">
+                        <li class="user">
+                            <a href="#"></a>
+                        </li>
+                        <li class="user">
+                            <a href="#"></a>
+                        </li>
+                    </ul>
+                    <ul class="searchWord">
+                        <li class="keyword">시인의 별을 나는 어머님</li>
+                        <li class="keyword">다 까닭입니다.</li>
+                        <li class="keyword">너무</li>
+                        <li class="keyword">토끼</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 자바스크립트 연결 -->
+    <script src="js/main.js"></script>
+</body>
+</html>

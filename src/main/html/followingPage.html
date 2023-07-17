@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KINNI</title>
+
+    <!-- 폰트(NOTO SANS) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;600;900&display=swap" rel="stylesheet">
+    <!-- font-family: 'Noto Sans KR', sans-serif; -->
+
+    <!-- 폰트어썸 -->
+    <script src="https://kit.fontawesome.com/08d3ec3c73.js" crossorigin="anonymous"></script>
+
+    <!-- 제이쿼리 CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <!-- CSS 연결 -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="followUsrWrap">
+        <div class="fixed_wrap">
+            <!-- 헤더 -->
+            <div class="myPageHeader">
+                <div class="headerBg">
+                    <button type="button" class="logOutBtn">LOGOUT</button>
+                </div>
+                <div class="profileImg">
+                    <img src="" alt="" class="headerProfile">
+                    <button type="button" class="retouchProfile">
+                        <i class="fa-solid fa-gear"></i>
+                    </button>
+                </div>
+                <div class="headerText">
+                    <p class="myPageName">zl존 ㅋiLi</p>
+                    <span class="myPageId">@Kinni</span>
+                    <div class="followWrap">
+                        <a href="#" class="followingWrap">
+                            <p>2</p>
+                            <span>Following</span>
+                        </a>
+                        <a href="#" class="followerWrap">
+                            <p>3</p>
+                            <span>Following</span>
+                        </a>
+                    </div>
+                    <a href="#" class="settingPageBtn">
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </a>
+                </div>
+            </div>
+
+            
+
+            <!-- 팔로잉 & 팔로워 -->
+            <div class="lnb">
+                <ul>
+                    <li>
+                        <button type="button" class="viewFollowing">
+                            <span class="viewNow">팔로잉</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="viewFollower">
+                            <span>팔로워</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 팔로잉 영역 -->
+        <div class="followingSection">
+            <ul>
+                <li>
+                    <a href="#" class="following">
+                        <img src="" alt="프로필 사진">
+                        <div class="followingName">
+                            <p>오늘저녁뭐먹지</p>
+                            <span class="idBefore">todayDinner</span>
+                        </div>
+                        <button type="button" class="followingBtn">Following</button>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="following">
+                        <img src="" alt="프로필 사진">
+                        <div class="followingName">
+                            <p>졸려잉</p>
+                            <span class="idBefore">tiger</span>
+                        </div>
+                        <button type="button" class="followingBtn">Following</button>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="following">
+                        <img src="" alt="프로필 사진">
+                        <div class="followingName">
+                            <p>술먹자</p>
+                            <span class="idBefore">dieAndEat</span>
+                        </div>
+                        <button type="button" class="followingBtn">Following</button>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="following">
+                        <img src="" alt="프로필 사진">
+                        <div class="followingName">
+                            <p>하기싫다</p>
+                            <span class="idBefore">wantogotohome</span>
+                        </div>
+                        <button type="button" class="followingBtn">Following</button>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="following">
+                        <img src="" alt="프로필 사진">
+                        <div class="followingName">
+                            <p>살빼자</p>
+                            <span class="idBefore">diet</span>
+                        </div>
+                        <button type="button" class="followingBtn">Following</button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 팔로워 영역 -->
+        <div class="followerSection">
+            <ul>
+                <li>
+                    <a href="#" class="following">
+                        <img src="" alt="프로필 사진">
+                        <div class="followingName">
+                            <p>오늘저녁뭐먹지</p>
+                            <span class="idBefore">todayDinner</span>
+                        </div>
+                        <button type="button" class="followListBtn">Follow</button>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="following">
+                        <img src="" alt="프로필 사진">
+                        <div class="followingName">
+                            <p>졸려잉</p>
+                            <span class="idBefore">tiger</span>
+                        </div>
+                        <button type="button" class="followListBtn">Follow</button>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="following">
+                        <img src="" alt="프로필 사진">
+                        <div class="followingName">
+                            <p>술먹자</p>
+                            <span class="idBefore">dieAndEat</span>
+                        </div>
+                        <button type="button" class="followListBtn">Follow</button>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="following">
+                        <img src="" alt="프로필 사진">
+                        <div class="followingName">
+                            <p>하기싫다</p>
+                            <span class="idBefore">wantogotohome</span>
+                        </div>
+                        <button type="button" class="followListBtn">Follow</button>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="following">
+                        <img src="" alt="프로필 사진">
+                        <div class="followingName">
+                            <p>살빼자</p>
+                            <span class="idBefore">diet</span>
+                        </div>
+                        <button type="button" class="followListBtn">Follow</button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 하단 메뉴탭 -->
+        <nav>
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-house"></i></a></li>
+                <li>
+                    <button type="button" class="searchBtn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </li>
+                <li><a href="#"><i class="fa-solid fa-bell"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
+            </ul>
+        </nav>
+
+        <!-- 설정 모달창 -->
+        <div class="bg">
+            <div class="settingModal">
+                <p>설정</p>
+                <div class="openUsr">
+                    <label for="open">계정 공개</label>
+                    <div class="radioBar">
+                        <input type="radio" id="open">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="activateUsr">
+                    <label for="activate">계정 활성화</label>
+                    <div class="radioBar">
+                        <input type="radio" id="activate">
+                    </div>
+                </div>
+                <div class="settingBtns">
+                    <button type="button" class="settingNo">취소</button>
+                    <button type="button" class="settingYes">저장</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 검색 창 -->
+        <div class="bg">
+            <div class="search">
+                <div class="searchContents">
+                    <div class="searchTop">
+                        <a href="#" class="contentsProfile">
+
+                        </a>
+                        <input type="text" class="searchBar" placeholder="검색">
+                    </div>
+                    <div class="searchKey">
+                        <p class="latestSearch">최근 검색어</p>
+                        <button type="button" class="searchExit">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                    <ul class="searchUser">
+                        <li class="user">
+                            <a href="#"></a>
+                        </li>
+                        <li class="user">
+                            <a href="#"></a>
+                        </li>
+                    </ul>
+                    <ul class="searchWord">
+                        <li class="keyword">시인의 별을 나는 어머님</li>
+                        <li class="keyword">다 까닭입니다.</li>
+                        <li class="keyword">너무</li>
+                        <li class="keyword">토끼</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 자바스크립트 연결 -->
+    <script src="js/main.js"></script>
+</body>
+</html>

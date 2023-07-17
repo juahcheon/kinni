@@ -1,0 +1,986 @@
+@charset "utf-8";
+* {margin: 0; padding: 0; border: 0;}
+a {text-decoration: none; color: #000;}
+li {list-style: none;}
+body {font-family: 'Noto Sans KR', sans-serif;}
+
+
+
+
+
+
+/* 로그인 페이지 */
+
+
+
+
+
+.logInWrap {
+    width: 390px; 
+    height: 844px;
+    position: relative;
+    border: 1px solid #aaa;
+    padding: 40px;
+    box-sizing: border-box;
+}
+.logInkakao {
+    width: 100%;
+    height: 40%;
+    border-bottom: 1px solid #888;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logInkakao h1 {
+    margin: 40px 0 60px;
+}
+.logInBtn {
+    width: 220px;
+    height: 40px;
+    background-color: rgba(0,0,0,.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.orTable {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-40%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: #888;
+}
+.logInEmail {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+.logInInput {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.IdInput,
+.PWInput {
+    width: 100%;
+    height: 40px;
+    display: flex;
+}
+.PWInput {
+    margin: 10px 0 60px 0;
+}
+.logInInput label {
+    width: 70px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+.logInInput input {
+    width: 200px;
+    height: 30px;
+    border-bottom: 1px solid #aaa;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.joinBtn {
+    display: flex;
+    font-size: 13px;
+    margin-top: 40px;
+}
+.joinBtn p {
+    margin-right: 20px;
+}
+.signUp {
+    border-radius: 10px;
+    border: 1px solid #aaa;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+
+
+
+
+/* 메인 페이지 */
+
+
+
+
+
+
+button[type="button"] {
+    cursor: pointer;
+}
+.fixed_wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.mainWrap {
+    width: 390px; 
+    height: 696px;
+    position: relative;
+    padding-top: 90px;
+    padding-bottom: 60px;
+}
+
+
+/* 헤더 */
+header {
+    width: 390px;
+    height: 60px;
+    background-color: rgba(255,0,0,.1);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.profileBtn {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0,0,0,.1);
+    border-radius: 50%;
+    display: block;
+}
+.loginBtn {
+    font-size: 14px;
+    color: #aaa;
+    letter-spacing: -1px;
+    font-weight: 100;
+}
+
+/* 추천 & 최신 */
+.lnb {
+    width: 390px;
+    height: 30px;
+    border-bottom: 1px solid #eee;
+}
+.lnb ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.lnb ul li {
+    width: 50%;
+    height: 100%;
+}
+.lnb ul li button {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+.latest span {
+    padding: 5px 10px;
+    border-bottom: 2px solid red;
+}
+.viewNow {
+    width: 10px;
+    height: 1px;
+    padding: 5px 10px;
+    border-bottom: 2px solid red;
+}
+
+/* 키니 영역 */
+section {
+    width: 390px;
+    height: 100%;
+    overflow-y: scroll;
+    position: relative;
+}
+section::-webkit-scrollbar {
+    display: none;
+}
+section .inner:not(:first-child) {
+    margin-top: 20px;
+}
+.contentsBox {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+.contentsBox .inner {
+    display: flex;
+}
+.contentsProfile {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0,0,0,.1);
+    display: block;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.contentsText {
+    width: 315px;
+}
+.userName {
+    font-weight: 500;
+    font-size: 16px;
+}
+.reComment {
+    margin-top: 3px;
+    font-size: 12px;
+}
+.reComment strong {
+    font-weight: 500;
+    color: #888;
+}
+.context {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.context img {
+    width: 310px;
+}
+.contentsBtns {
+    width: 174px;
+    height: 20px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 135px;
+}
+.contentsBtns button {
+    background-color: transparent;
+}
+.commentBtn {
+    color: #000;
+}
+.rekinniBtn {
+    font-size: 15px;
+}
+
+/* 키멘트 영역 */
+.viewCommentSection {
+    display: none;
+}
+.connect {
+    width: 10px;
+    height: 100px;
+    color: #000;
+}
+
+/* 글쓰기 버튼 */
+.kinniBtn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    position: absolute;
+    right: 20px;
+    bottom: 100px;
+    z-index: 10;
+    border: 1px solid #bbb;
+}
+
+/* 키니위니 영역 */
+.viewKinniwinniSection {
+    display: none;
+}
+.viewKinniwinniSection .kinniwinniBtn i {
+    color: red;
+}
+
+/* 하단 메뉴탭 */
+nav {
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    z-index: 9;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+    box-sizing: border-box;
+}
+nav ul {
+    display: flex;
+    width: 100%;
+    height: 60px;
+}
+nav ul li {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+.searchBtn {
+    font-size: 20px;
+}
+
+/* 검색 창 */
+.bg {
+    width: 391px;
+    height: 846px;
+    background-color: rgba(0,0,0,.5);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    opacity: 0;
+}
+.search {
+    width: 100%;
+    height: 430px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(255,255,255);
+    z-index: 200;
+    padding: 25px;
+    box-sizing: border-box;
+}
+.searchTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 40px;
+    padding-right: 50px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+.searchBar {
+    width: 75%;
+    height: 85%;
+    border-radius: 10px;
+    border: 1px solid #bbb;
+    text-align: center;
+    outline: none;
+}
+.searchKey {
+    width: 100%;
+    position: relative;
+}
+.latestSearch {
+    font-size: 13px;
+}
+.searchExit {
+    width: 15px;
+    height: 15px;
+    background-color: slateblue;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 10px;
+}
+.searchUser {
+    display: flex;
+}
+.user {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,.1);
+    margin: 20px 20px 30px 0;
+}
+.user a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.searchWord {
+    width: 100%;
+    font-size: 14px;
+}
+.keyword {
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    margin-bottom: 15px;
+    position: relative;
+}
+.keyword::after {
+    content: "↗";
+    position: absolute;
+    right: 0;
+    color: #aaa;
+}
+
+
+
+
+
+/* 약관 페이지 */
+
+
+
+
+.termsWrap {
+    width: 390px;
+    height: 844px;
+    padding: 100px 70px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.termsContents {
+    width: 100%;
+    height: 280px;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #aaa;
+    margin: 50px 0;
+    overflow-y: scroll;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.termsContents::-webkit-scrollbar {
+    width: 10px;  /* 스크롤바의 너비 */
+}
+
+.termsContents::-webkit-scrollbar-thumb {
+    height: 30%; /* 스크롤바의 길이 */
+    background: #217af4; /* 스크롤바의 색상 */
+    
+    border-radius: 10px;
+}
+
+.termsContents::-webkit-scrollbar-track {
+    background: rgba(33, 122, 244, .1);  /*스크롤바 뒷 배경 색상*/
+}
+
+.termsBtns {
+    margin-top: 50px;
+}
+.termsBtns button {
+    padding: 7px 30px;
+    border-radius: 5px;
+}
+.termsNo {
+    margin-right: 20px;
+    background-color: transparent;
+    border: 1px solid rgba(33, 122, 244, .1);
+}
+.termsYes {
+    background-color: rgba(33, 122, 244, .1);
+}
+
+
+
+
+
+/* 마이페이지 */
+
+
+
+
+.myWrap {
+    width: 390px; 
+    height: 543px;
+    position: relative;
+    padding-top: 241px;
+    padding-bottom: 80px;
+}
+.myPageHeader {
+    width: 100%;
+    height: 210px;
+    position: relative;
+}
+.headerBg {
+    width: 100%;
+    height: 90px;
+    background-color: #ccc;
+}
+.logOutBtn {
+    background-color: transparent;
+    letter-spacing: -2px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.profileImg {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 20px;
+    top: 40%;
+    transform: translateY(-50%);
+}
+.headerProfile {
+    width: 70px;
+    height: 70px;
+    background-color: rgba(0,0,0,.1);
+    border-radius: 50%;
+}
+.retouchProfile {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    position: absolute;
+    right: 6px;
+    bottom: 0;
+    background-color: lightblue;
+    font-size: 12px;
+}
+.headerText {
+    width: 100%;
+    height: 120px;
+    padding: 35px 30px 0;
+    box-sizing: border-box;
+    line-height: 1.2;
+}
+.myPageName {
+    font-size: 14px;
+    font-weight: 500;
+}
+.myPageId {
+    font-size: 11px;
+    color: #888;
+}
+.followWrap {
+    display: flex;
+    margin-top: 15px;
+}
+.followingWrap,
+.followerWrap {
+    display: flex;
+    font-size: 13px;
+}
+.followWrap p {
+    margin-right: 5px;
+}
+.followWrap span {
+    color: #999;
+    margin-right: 15px;
+}
+.followBtn {
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 5px 10px;
+    font-size: 12px;
+    position: absolute;
+    right: 20px;
+    top: 55%;
+}
+.settingPageBtn {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 12px;
+    position: absolute;
+    right: 10px;
+    top: 55%;
+    background-color: #217af4;
+    color: #fff;
+}
+
+/* 설정 모달창 */
+.settingModal {
+    width: 320px;
+    height: 250px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding: 20px 60px 50px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+}
+.settingModal p {
+    font-size: 24px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 30px;
+}
+.settingModal input[type=radio] {
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    outline:0;
+    box-shadow:none;
+    border:none;
+}
+.settingModal input[type=radio] span {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 3px;
+    border:1px solid #8b8b8b;
+    border-radius:100%;
+    vertical-align:middle;
+    cursor:pointer;
+    position: absolute;
+    left: -3px;
+    top: -1px;
+    background-color: #217af4;
+}
+
+
+.radioBar {
+    width: 30px;
+    height: 15px;
+    border-radius: 10px;
+    /* background-color: #8fb9f470; */
+    border: 1px solid #8fb9f470;
+    position: relative;
+}
+.openUsr {
+    margin-bottom: 10px;
+}
+.openUsr,
+.activateUsr {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.settingBtns {
+    margin-top: 30px;
+}
+.settingBtns button {
+    padding: 7px 30px;
+    border-radius: 5px;
+}
+.settingNo {
+    margin-right: 20px;
+    background-color: transparent;
+    border: 1px solid rgba(33, 122, 244, .1);
+}
+.settingYes {
+    background-color: rgba(33, 122, 244, .1);
+}
+
+
+
+
+/* 프로필 수정 페이지 */
+
+
+
+
+
+.profileWrap {
+    width: 390px;
+    height: 844px;
+    border: 1px solid #ccc;
+    padding: 90px 50px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.profileWrap h2 {
+    font-weight: 500;
+}
+.previewImg {
+    width: 150px;
+    height: 150px;
+    margin: 50px auto 80px;
+    position: relative;
+}
+.previewImg img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #ccc;
+}
+.addImgBtn {
+    position: absolute;
+    right: 8px;
+    bottom: 6px;
+    background-color: transparent;
+    font-size: 20px;
+}
+.retouchName label {
+    margin-right: 10px;
+}
+.retouchName input {
+    outline: none;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+
+
+
+
+/* 회원가입 페이지 */
+
+
+
+
+.joinH1 {
+    margin: 50px 0 70px;
+    text-align: center;
+}
+.signInput {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.signInput label {
+    font-size: 14px;
+}
+.signInput input {
+    width: 190px;
+    outline: none;
+    border-bottom: 1px solid #ccc;
+    padding: 5px 10px;
+}
+.joinBtns {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+.joinBtns button {
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.joinExit {
+    margin-right: 20px;
+    background-color: transparent;
+    border: 1px solid #ccc;
+}
+.joinExit:hover {
+    color: #ccc;
+}
+.join:hover {
+    color: #fff;
+}
+
+/* 회원가입 모달 */
+.joinModal {
+    width: 320px;
+    height: 250px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding: 70px 60px 50px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+}
+.joinModal p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+.joinModalBtn {
+    display: block;
+    margin-top: 30px;
+    background-color: #000;
+    color: #eee;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 7px 30px;
+    border-radius: 5px;
+}
+.joinModalBtn:hover {
+    color: #aaa;
+}
+
+
+
+
+/* 알림 센티 */
+
+
+
+
+.noticeWrap {
+    width: 390px; 
+    height: 704px;
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+.noticeSection {
+    padding: 60px 20px 25px;
+    box-sizing: border-box;
+}
+.noticeSection ul {
+    transition: .5s;
+}
+.noticeSection ul li {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    box-shadow: 0 5px 5px rgba(0,0,0,.2);
+    border-radius: 10px;
+    margin-bottom: 15px;
+    position: relative;
+    background-color: #eee;
+}
+.noticeSection ul li i:not(.fa-xmark) {
+    font-size: 20px;
+    margin: 5px 10px 0 0;
+}
+.noticeSection ul li .fa-heart {
+    color: red;
+}
+.noticeContents {
+    font-size: 13px;
+}
+.noticeUsrName {
+    color: #999;
+}
+.noticeSection .contentsProfile {
+    margin-bottom: 5px;
+}
+.noticeExit {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #217af4;
+    color: #fff;
+    font-size: 12px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+.removeAll {
+    width: 50px;
+    height: 25px;
+    border-radius: 15px;
+    background-color: #eee;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+    margin-bottom: 20px;
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    font-size: 12px;
+}
+
+
+
+
+
+/* 검색 페이지 */
+
+
+
+
+.searchWrap {
+    width: 390px; 
+    height: 674px;
+    position: relative;
+    padding-top: 90px;
+    padding-bottom: 80px;
+}
+.searchWrap .fixed_wrap {
+    width: 390px;
+} 
+.fixed_wrap .searchTop {
+    width: 100%;
+    height: 80px;
+    margin-bottom: 0;
+    padding: 25px 40px 20px 30px;
+    box-sizing: border-box;
+}
+.searchTop input {
+    width: 230px;
+    height: 30px;
+}
+.searchTopBtn {
+    color: #999;
+    background-color: transparent;
+    font-size: 16px;
+}
+
+
+
+
+/* 팔로잉 & 팔로워 */
+
+
+
+
+.followUsrWrap {
+    width: 390px;
+    height: 524px;
+    padding-top: 240px;
+    padding-bottom: 80px;
+    position: relative;
+}
+.followingSection ul li,
+.followerSection ul li {
+    width: 100%;
+    height: 60px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #eee;
+    position: relative;
+}
+.followingSection ul li a,
+.followerSection ul li a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.followingSection ul li a img,
+.followerSection ul li a img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: block;
+    background-color: #ccc;
+    margin-right: 20px;
+}
+.idBefore::before {
+    content: "@";
+}
+.followingName {
+    line-height: 1.1;
+}
+.followingName p {
+    font-size: 13px;
+}
+.followingName span {
+    font-size: 11px;
+    color: #999;
+}
+.followingBtn,
+.followListBtn {
+    padding: 5px 10px;
+    border-radius: 10px;
+    position: absolute;
+    right: 20px;
+}
+.followingBtn:hover {
+    background-color: red;
+    color: #fff;
+}
+.followerSection {
+    display: none;
+}
